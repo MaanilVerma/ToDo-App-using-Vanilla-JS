@@ -1,9 +1,9 @@
 body{
-    background-color: #75b79e;
+    background-color: #f3ca20;
   }
 
   #content_container{
-    background-color:#5b5656;
+    background-color:#000;
     width:50%;
     margin: auto;
     display:inline-block;
@@ -15,7 +15,7 @@ body{
 
   #finish_task_header{
     margin:auto;
-    background-color:#4d4646;
+    background-color:#000;
     color:white;
     width:90%;
     height:70px;
@@ -27,7 +27,7 @@ body{
   }
 
   #task_input_container{
-    background-color:#fff;
+    background-color:#f3ca20;
     margin:10px auto;
     height:120px;
     width:90%;
@@ -40,19 +40,32 @@ body{
     width:60%;
     float:left;
     height:50px;
-    background-color:none;
+    background-color:#f3ca20;
     border:none;
-    border-bottom:2px solid #7fcd91;
+    border-bottom:2px solid #000;
     text-align:center;
     font-family:monospace;
     font-weight:bold;
     font-size:15px;
-    border-right:0.2px solid #4d4646;
+    border-right:0.2px solid #000;
     transition: 0.3s;
   }
 
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #000;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #000;
+  }
+
   #input_box:focus{
-    border-bottom:4px solid #2c786c;
+    border-bottom:4px solid #000;
     outline:none;
   }
 
@@ -60,9 +73,9 @@ body{
     width:40%;
     float:left;
     height:50px;
-    background-color:none;
-    border:none;
-    border-bottom:2px solid #7fcd91;
+    background-color:#f3ca20;
+    border:#000;
+    border-bottom:2px solid #000;
     text-align:center;
     font-family:monospace;
     font-weight:bold;
@@ -72,12 +85,12 @@ body{
    }
 
    #input_date:focus{
-    border-bottom:4px solid #2c786c;
+    border-bottom:4px solid #000;
     outline:none;
   }
 
   ::-webkit-datetime-edit-fields-wrapper {
-    background: white; margin-left: 50px;
+    background: #f3ca20; margin-left: 50px;
   }
   ::-webkit-datetime-edit-text {
     color: red; padding: 0 0.3em;
@@ -109,23 +122,23 @@ body{
     float:left;
     margin-left:20%;
     margin-top: 20px;
-    background-color: #fff;
+    background-color: #000;
     height:40px;
-    color:#2c786c;
+    color:#f3ca20;
     cursor:pointer;
     outline:none;
     text-align:center;
     font-family:monospace;
     font-size: 17px;
     text-align: center;
-    border: 2px solid #75b79e;
+    border: 2px solid white;
     border-radius: 5px;
   }
 
-  #input_button:hover{
+  /* #input_button:hover{
     background-color: #75b79e;
     color:white;
-  }
+  } */
 
   #input_button:active{
     transform: translateY(4px);
@@ -134,12 +147,12 @@ body{
   .header{
     float:left;
     margin-left: 5%;
-    background-color:#75b79e;
-    color:white;
+    background-color:#f3ca20;
+    color:#000;
     text-align:center;
     font-family:monospace;
     font-weight:bold;
-    font-size:15px;
+    font-size:19px;
     padding-top:5px;
     padding-bottom:5px;
     padding-left:20px;
@@ -151,7 +164,7 @@ body{
     float:left;
     margin-left: 5%;
     margin-bottom: 40px;
-    background-color:#f5eaea;
+    background-color:wheat;
     width:90%;
     height:390px;
     overflow-y:scroll;
@@ -159,7 +172,7 @@ body{
   }
 
   .task_container{
-    background-color:#fff;
+    background-color:#f3ca20;
     width: 90%;
     height:80px;
     margin:0 auto;
@@ -192,7 +205,8 @@ body{
     height:30px;
     width:30px;
     cursor:pointer;
-    background-color:#fff;
+    background-color:#000;
+    color:white;
     border:none;
     border-radius:20px;
     outline:none;
@@ -200,7 +214,7 @@ body{
   }
 
   #task_done_button:hover{
-    background-color:#75b79e;
+    background-color:green;
     color:white;
   }
 
@@ -213,7 +227,8 @@ body{
     height:30px;
     width:30px;
     cursor:pointer;
-    background-color:#fff;
+    background-color:#000;
+    color: white;
     border:none;
     border-radius:20px;
     outline:none;
@@ -225,7 +240,7 @@ body{
     height:30px;
     width:30px;
     cursor:pointer;
-    background-color:#ffed83;
+    background-color:#000;
     color: white;
     border:none;
     border-radius:20px;
@@ -233,7 +248,7 @@ body{
     margin-right: 5px;
   }
   #task_edit_button:hover{
-    background-color:#ffed83;
+    background-color:#000;
     color:white;
   }
   #task_edit_button:active{
@@ -245,7 +260,8 @@ body{
     height:30px;
     width:30px;
     cursor:pointer;
-    background-color:#fff;
+    background-color:#000;
+    color: white;
     border:none;
     border-radius:20px;
     outline:none;
@@ -262,7 +278,7 @@ body{
   }
 
   #task_title{
-    background-color:#fff;
+    background-color:#f3ca20;
     font-family:monospace;
     font-weight:bold;
     font-size:15px;
@@ -303,9 +319,9 @@ body{
   }
 
   #task_date{
-    background-color:#fff;
+    background-color:#f3ca20;
     font-family:monospace;
-    color:grey;
+    color:#000;
     font-size:12px;
     float: left;
     margin: 0;
